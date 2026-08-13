@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="./webcc.min.js"></script>
+  <script src="./webccInterface.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="animatedFileTransfer">
+    <div id="sourceContainer" class="folderContainer">
+      <svg class="folderIcon" viewBox="0 0 120 84" aria-hidden="true">
+        <path d="M8 25V14c0-6 5-10 10-10h28l11 13h45c6 0 10 4 10 10v10H8z" class="folderBack"/>
+        <path d="M5 31h110l-7 45c-1 5-5 8-10 8H22c-5 0-9-3-10-8z" class="folderFront"/>
+      </svg>
+      <div id="sourceFolderName" class="folderName">Source</div>
+    </div>
+
+    <div id="transferPath" aria-hidden="true"><span></span><b>›</b></div>
+
+    <div id="destinationContainer" class="folderContainer">
+      <svg class="folderIcon" viewBox="0 0 120 84" aria-hidden="true">
+        <path d="M8 25V14c0-6 5-10 10-10h28l11 13h45c6 0 10 4 10 10v10H8z" class="folderBack"/>
+        <path d="M5 31h110l-7 45c-1 5-5 8-10 8H22c-5 0-9-3-10-8z" class="folderFront"/>
+      </svg>
+      <div id="destinationFolderName" class="folderName">Destination</div>
+    </div>
+
+    <div id="movingFile">
+      <svg viewBox="0 0 64 76" aria-hidden="true">
+        <path d="M8 2h31l17 17v55H8z" class="filePaper"/>
+        <path d="M39 2v17h17" class="fileFold"/>
+      </svg>
+      <div id="fileName">File.txt</div>
+    </div>
+
+    <div id="status">Waiting...</div>
+  </div>
+  <script src="./codeAnimated.js"></script>
+</body>
+</html>
