@@ -1,0 +1,50 @@
+{
+  "$schema": "./CWC_manifest_Schema.json",
+  "mver": "1.2.0",
+  "control": {
+    "identity": {
+      "name": "WinCCUnifiedAnimatedFileTransfer",
+      "version": "1.1.0",
+      "displayname": "Animated File Transfer",
+      "icon": "./assets/filetransfer.ico",
+      "type": "guid://7C42387C-4FC2-4607-8200-A423E4580F23",
+      "start": "./control/index.html"
+    },
+    "environment": {
+      "prerequisites": {
+        "renderingspace": {
+          "defaultwidth": 526,
+          "defaultheight": 200,
+          "unit": "px"
+        }
+      },
+      "extensions": {
+        "HMI": {
+          "mandatory": true,
+          "version": "~1.0.0"
+        }
+      }
+    },
+    "metadata": {
+      "author": "Quimet",
+      "keywords": ["Animated", "File", "Transfer", "SVG", "Animation", "WinCC Unified"],
+      "homepage": "https://github.com/DnomaidGit",
+      "company": "Dnomaid"
+    },
+    "contracts": {
+      "api": {
+        "methods": {},
+        "events": {},
+        "properties": {
+          "Start": {"type": "boolean", "default": false},
+          "End": {"type": "boolean", "default": false},
+          "AnimationTime": {"type": "number", "default": 2500},
+          "SourceFolderName": {"type": "string", "default": "Source"},
+          "DestinationFolderName": {"type": "string", "default": "Destination"},
+          "FileName": {"type": "string", "default": "File.txt"}
+        }
+      }
+    },
+    "types": {}
+  }
+}
