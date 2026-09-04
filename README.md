@@ -21,3 +21,15 @@ Custom Web Control for WinCC Unified that animates one file from a source folder
 6. The CWC returns the file to source and sets `End = FALSE`.
 
 `webcc.min.js` is the Siemens WebCC runtime library used by the reference WinCC Unified template.
+
+## Visual animation
+
+![Animated File Transfer simulation](./animated_file_transfer_demo.gif)
+
+The animation above reproduces the visual behavior of the Custom Web Control:
+
+`Source → File transfer → Destination → End = TRUE → Reset`
+
+## Development
+
+This project was developed with the support of ChatGPT by OpenAI, used as an assistance tool for code development, review, documentation, and troubleshooting.
